@@ -1,18 +1,20 @@
 
-  ~ OS X Daap SSH Forward Script
+  ~ Linux Daap SSH Forward Script
 
+  This script a modified version of Armin Ronacher's 
+  daap-forward, so it works on Linux (tested on Ubuntu 14.04).
   For the lazy of us that use a remote DAAP server and want to
   connect to it via SSH port forwarding but can't remember the
   commands to run.
 
 
   Usage:
-
-    1. Create a file called `~/.daapforward`
-    2. Update config according to example below
-    3. run `python daap-forward.py`
-    4. Start iTunes and click on the daap share on the left
-    5. \m/
+    1. Install avahi-utils: 'sudo apt-get install avahi-utils'
+    2. Create a file called `~/.daapforward`
+    3. Update config according to example below
+    4. run `python daap-forward.py`
+    5. Start iTunes and click on the daap share on the left
+    6. \m/
 
   Config:
 

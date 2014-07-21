@@ -40,8 +40,8 @@ def start_ssh(pids):
 
 
 def start_proxy(pids):
-    c = Popen(['dns-sd', '-R', config['share-name'], '_daap._tcp.', 'local',
-               config['local-daap-port']])
+    c = Popen(['avahi-publish', '-s', config['share-name'], '_daap._tcp.', 
+                config['local-daap-port']])
     pids.append(c.pid)
     c.wait()
 
